@@ -1,3 +1,9 @@
+<!-- Contents -->
+* [About Me](#About Me)
+* [Featured Quote](#Featured Quote)
+* [Latest Articles](#Latest Articles)
+
+
 # Welcome to My Personal Website!
 
 Hello and welcome! I'm excited to share my knowledge and interests with you through this personal website. Here, you'll find a collection of my thoughts, ideas, and small articles on various topics.
