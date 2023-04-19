@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Welcome to unoop.com!</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to unoop.com!</h1>
+<head>
+	<title>My Personal Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Global styles for body */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #222; /* Dark background color */
+			color: #eee; /* Light text color */
+		}
+
+		/* Styles for banner */
+		#banner {
+			height: 80px;
+			background-color: #333; /* Darker banner color */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			z-index: 1;
+		}
+		
+		#banner h1 {
+			font-size: 2em;
+			margin: 0;
+		}
+		
+		#banner p {
+			font-size: 1.2em;
+			margin: 0;
+		}
+		
+		/* Styles for navigation */
+		#navigation {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 25%; /* 1/4th of the screen */
+			height: 100%;
+			background-color: #444; /* Darker navigation color */
+			transition: all 0.3s ease-in-out; /* Animation for collapse/expand */
+			z-index: 2;
+		}
+		
+		#navigation.collapsed {
+			width: 0;
+		}
+		
+		#navigation ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		#navigation li {
+			padding: 10px;
+			border-bottom: 1px solid #666; /* Lighter border color */
+		}
+		
+		#navigation li:hover {
+			background-color: #666; /* Lighter hover color */
+		}
+		
+		/* Styles for center body */
+		#content {
+			margin-left: 25%; /* Same as navigation width */
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="banner">
+		<h1>My Personal Website</h1>
+		<p>Tagline goes here</p>
+	</div>
+	<div id="navigation">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+	<div id="content">
+	  <h1>Welcome to unoop.com!</h1>
       <p>Hey there, fellow internet explorer! Welcome to unoop.com, the online hub where Anoop’s adventures in tech and creativity come to life!</p>
       <h2>The Story of unoop.com</h2>
       <p>One random day, in a fit of excitement (and caffeine), I found myself going all psyched up about the possibility of owning my own internet corner. That’s when I had an epiphany - why not turn my name, Anoop, into a domain? And voila, <span class="highlight">unoop.com</span> was born! It’s like having my own digital playground, but with fewer swings and more code!</p>
@@ -16,6 +95,21 @@
       <h2>Join Me on the Journey</h2>
       <p>So, fasten your seatbelt and join me on this exciting ride as we explore the world of technology, creativity, and a little bit of humor too! Unoop.com is not just a domain, but a reflection of my passion for tech and creativity, with a side of humor. Thanks for being a part of my online community at unoop.com. Let’s make this digital playground a space where we can connect, share ideas, and geek out over all things tech - with a dash of humor along the way!</p>
       <p>Looking forward to having you join me on this crazy adventure at <a href="https://www.unoop.com">unoop.com</a>!</p>
-    </div>
-  </body>
+	</div>
+	
+	<script>
+		/* Script for collapsing/expanding navigation */
+		let nav = document.getElementById("navigation");
+        let content = document.getElementById("content");
+		nav.addEventListener("click", function() {
+		nav.classList.toggle("collapsed");
+		if (nav.classList.contains("collapsed")) {
+			content.style.marginLeft = "0";
+		} else {
+			content.style.marginLeft = "25%";
+		}
+	});
+</script>
+
+</body>
 </html>
