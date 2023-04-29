@@ -1,5 +1,3 @@
-# Welcome to unoop.com!
-
 Hey there, fellow internet explorer! Welcome to unoop.com, the online hub where Anoop's adventures in tech and creativity come to life!
 
 ## The Story of unoop.com
